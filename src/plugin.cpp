@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2015 Zeex
+// Copyright (c) 2011-2021 Zeex
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -164,7 +164,7 @@ PLUGIN_EXPORT bool PLUGIN_CALL Load(void **ppData) {
                    &amx_path_finder));
   }
 
-  logprintf("  Profiler plugin " PROJECT_VERSION_STRING);
+  logprintf("  Profiler plugin " PLUGIN_VERSION_STRING);
   return true;
 }
 

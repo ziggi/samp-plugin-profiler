@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2014 Zeex
+// Copyright (c) 2011-2019 Zeex
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -391,7 +391,7 @@ bool ProfilerHandler::Dump() const {
           Printf("Writing call graph to %s", call_graph_filename.c_str());
           writer->set_stream(&call_graph_stream);
           writer->set_script_name(amx_path_);
-          writer->set_root_node_name("SA-MP Server");
+          writer->set_root_node_name("Server");
           writer->Write(profiler_.call_graph());
           delete writer;
         }

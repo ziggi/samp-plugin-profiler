@@ -1,4 +1,4 @@
-// Copyright (c) 2011-2015 Zeex
+// Copyright (c) 2011-2019 Zeex
 // All rights reserved.
 //
 // Redistribution and use in source and binary forms, with or without
@@ -77,7 +77,7 @@ class Profiler {
   // BeginFunction() and EndFunction() are called when entering
   // a function and returning from it respectively.
   void EnterFunction(Address address, Address frm);
-  void LeaveFunction(Address address = 0);
+  void LeaveFunction(Address address, Address frm);
 
  private:
   AMX *amx_;
